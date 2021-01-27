@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(214, 137, 208);
+  background: radial-gradient(
+    circle,
+    rgba(214, 137, 208, 1) 0%,
+    rgba(172, 126, 168, 1) 77%,
+    rgba(104, 77, 102, 1) 93%
+  );
+}
+header {
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+}
+
+/* Hrlper classes */
+.row {
+  display: flex;
+}
+.container {
+  max-width: 870px;
+  margin: 0 auto;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.ai-c {
+  align-items: center;
+}
+.main-top {
+  margin-top: 15px;
+}
+.img-me {
+  width: calc(50% - 7.5px);
+  height: 100%;
+  object-fit: cover;
+  border: 5px solid #cacaca;
+}
+.top-right {
+  width: calc(50% - 7.5px);
+  background-color: #fff;
+}
+.card-header {
+  background: rgb(216, 216, 216);
+  background: linear-gradient(
+    0deg,
+    rgba(216, 216, 216, 1) 0%,
+    rgba(173, 165, 200, 1) 15%,
+    rgba(122, 112, 155, 1) 50%,
+    rgba(173, 165, 200, 1) 85%,
+    rgba(216, 216, 216, 1) 100%
+  );
+  padding: 10px;
+  color: #fff;
+}
+.card p {
+  margin: 15px;
+}
+.card a {
+  margin: 15px;
+  color: #000000;
+}
+.main-bottom {
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.main-lower {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.card {
+  flex-shrink: 1;
+  background-color: #fff;
+  flex-basis: 100%;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(255, 226, 252) 100%
+  );
+}
+.main-bottom .card:nth-child(2),
+.main-lower .card:nth-child(2) {
+  margin: 0 15px;
+}
+.card img {
+  max-width: 100%;
+}
+.icons {
+  display: flex;
+  padding: 15px;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+.icon {
+  width: 40px;
+  margin: 5px;
+}
+.card button {
+  margin: 5px auto 15px auto;
+  background-color: #1a800b;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+footer {
+  background-color: #fff;
+  padding: 5px;
+}
+footer .row {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  display: flex;
+  margin: 0 5px;
+}
+.footer-icon {
+  height: 1.3rem;
+  margin: 0 5px;
+}
