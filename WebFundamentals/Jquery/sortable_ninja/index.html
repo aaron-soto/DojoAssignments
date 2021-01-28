@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="ninja">
+      <div><img src="assets/sort1.png" alt="sort1" /></div>
+      <div><img src="assets/sort2.png" alt="sort2" /></div>
+      <div><img src="assets/sort3.png" alt="sort3" /></div>
+      <div><img src="assets/sort4.png" alt="sort4" /></div>
+      <div><img src="assets/sort5.png" alt="sort5" /></div>
+    </div>
+    <script>
+      $(function () {
+        $("#ninja").sortable();
+      });
+    </script>
+  </body>
+</html>
