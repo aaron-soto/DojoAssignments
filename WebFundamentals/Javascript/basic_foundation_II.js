@@ -27,7 +27,6 @@
 // }
 // console.log(printLowReturnHigh(arr1))
 
-
 // Print One, Return Another - Build a function that takes in an array of numbers.  The function should print the second-to-last value in the array, and return the first odd value in the array.
 // let arr1 = [1, 2, 3, 4, 5, 6, 7, 8]
 // function printOneReturnanother(arr) {
@@ -40,7 +39,6 @@
 // }
 // console.log(printOneReturnanother(arr1))
 
-
 // Double Vision - Given an array (similar to saying 'takes in an array'), create a function that returns a new array where each value in the original array has been doubled.  Calling double([1,2,3]) should return [2,4,6] without changing the original array.
 // let arr1 = [1,2,3]
 
@@ -52,7 +50,6 @@
 //   return doubledArr
 // }
 // console.log(double(arr1))
-
 
 // Count Positives - Given an array of numbers, create a function to replace the last value with the number of positive values found in the array.  Example, countPositives([-1,1,1,1]) changes the original array to [-1,1,1,3] and returns it.
 // let arr1 = [-1,1,1,1]
@@ -69,24 +66,19 @@
 // }
 // console.log(countPositives(arr1))
 
-
-
 // Evens and Odds - Create a function that accepts an array.  Every time that array has three odd values in a row, print "That's odd!".  Every time the array has three evens in a row, print "Even more so!".
-// var arr1 = [1, 2, 3, 4, 4, 4, 5, 6, 7, 7, 7]
-// function evensAndOdds(arr) {
-//   for (var i = 0; i < arr.length; i++) {
-//     if (arr[i] === arr[i+1] && arr[i] == arr[i + 2]) {
-//       if (arr[i] % 2 === 0) {
-//         console.log('Even more so!')
-//       } else if (arr[i] % 2 != 0) {
-//         console.log("That's odd!")
-//       }
-//     }
-//   }
-// }
+var arr1 = [1, 2, 3, 4, 2, 4, 5, 6, 7, 7, 7];
+function evensAndOdds(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0 && arr[i + 1] % 2 === 0 && arr[i + 2] % 2 === 0) {
+      console.log("Even more so!");
+    } else if (arr[i] % 2 != 0 && arr[i + 1] % 2 != 0 && arr[i + 2] % 2 != 0) {
+      console.log("That's Odd!");
+    }
+  }
+}
 
-// evensAndOdds(arr1)
-
+evensAndOdds(arr1);
 
 // Increment the Seconds - Given an array of numbers arr, add 1 to every other element, specifically those whose index is odd (arr[1], arr[3], arr[5], etc).  Afterward, console.log each array value and return arr.
 // let arr1 = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -104,8 +96,6 @@
 
 // console.log(incrementTheSeconds(arr1))
 
-
-
 // Previous Lengths - You are passed an array (similar to saying 'takes in an array' or 'given an array') containing strings.  Working within that same array, replace each string with a number - the length of the string at the previous array index - and return the array.  For example, previousLengths(["hello", "dojo", "awesome"]) should return ["hello", 5, 4]. Hint: Can for loops only go forward?
 // let arr1 = ["hello", "dojo", "awesome"]
 
@@ -121,8 +111,6 @@
 
 // console.log(previousLengths(arr1))
 
-
-
 // Add Seven - Build a function that accepts an array. Return a new array with all the values of the original, but add 7 to each. Do not alter the original array.  Example, addSeven([1,2,3]) should return [8,9,10] in a new array.
 // let arr1 = [1,2,3]
 
@@ -135,8 +123,6 @@
 // }
 
 // console.log(addSeven(arr1))
-
-
 
 // Reverse Array - Given an array, write a function that reverses its values, in-place.  Example: reverse([3,1,6,4,2]) returns the same array, but now contains values reversed like so... [2,4,6,1,3].  Do this without creating an empty temporary array.  (Hint: you'll need to swap values).
 // let arr1 = [3,1,6,4,2]
@@ -161,9 +147,6 @@
 // }
 // console.log(negative(arr1))
 
-
-
-
 // Always Hungry - Create a function that accepts an array, and prints "yummy" each time one of the values is equal to "food".  If no array values are "food", then print "I'm hungry" once.
 // function yummy(items) {
 //   for (var i = 0; i < items.length; i++) {
@@ -174,7 +157,7 @@
 //       founfFood = true
 //       console.log('Yummy')
 //     }
-//     
+//
 
 //   }
 //    if (foundYummy === false) {
@@ -191,8 +174,6 @@
 //     arr[i] = arr[arr.length - 1 - i]
 //     arr[arr.length-1 - i] = temp;
 //   }
-
-  
 
 //   return arr
 // }
