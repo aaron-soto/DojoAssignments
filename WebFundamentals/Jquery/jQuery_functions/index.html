@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Functions</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- Linking jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-dark text-light">
+    <div class="container">
+      <div
+        id="addClassRow"
+        class="row bg-secondary rounded align-items-center p-2 my-2"
+      >
+        <div class="col-2">
+          <button id="addClass" class="btn btn-success">AddClass</button>
+        </div>
+        <div class="col-10">
+          <h3>AddClass</h3>
+          <p class="add-class-text">
+            Click the button to add class 'red' to this paragraph
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="hideRow"
+        class="row bg-secondary rounded align-items-center p-2 my-2"
+      >
+        <div class="col-2">
+          <button id="hide-btn" class="btn btn-success">Hide</button>
+        </div>
+        <div class="col-10">
+          <h3>Hide</h3>
+          <p class="hide-text">Click the button to hide this paragraph.</p>
+        </div>
+      </div>
+
+      <div
+        id="showRow"
+        class="row bg-secondary rounded align-items-center p-2 my-2"
+      >
+        <div class="col-2">
+          <button id="show-btn" class="btn btn-success">Show</button>
+        </div>
+        <div class="col-10">
+          <h3>Show</h3>
+          <p class="show-text">Click the button to Show this paragraph.</p>
+        </div>
+      </div>
+
+      <div
+        id="toggleRow"
+        class="row bg-secondary rounded align-items-center p-2 my-2"
+      >
+        <div class="col-2">
+          <button id="toggle-btn" class="btn btn-success">Toggle</button>
+        </div>
+        <div class="col-10">
+          <h3>Toggle</h3>
+          <p class="toggle-text">Click the button to toggle this paragraph.</p>
+        </div>
+      </div>
+
+      <div class="row bg-secondary rounded align-items-center p-2 my-2">
+        <div class="col-2">
+          <button id="slide-down-btn" class="btn btn-success">
+            Slide Down
+          </button>
+        </div>
+        <div class="col-10">
+          <h3>Slide Down</h3>
+          <p class="slide-down-text">
+            Click the button to SlideDown this paragraph.
+          </p>
+        </div>
+      </div>
+
+      <div class="row bg-secondary rounded align-items-center p-2 my-2">
+        <div class="col-2">
+          <button id="slide-up-btn" class="btn btn-success">Slide Up</button>
+        </div>
+        <div class="col-10">
+          <h3>Slide Up</h3>
+          <p class="slide-up-text">
+            Click the button to SlideUp this paragraph.
+          </p>
+        </div>
+      </div>
+
+      <div class="row bg-secondary rounded align-items-center p-2 my-2">
+        <div class="col-2">
+          <button id="slide-toggle-btn" class="btn btn-success">
+            Slide Toggle
+          </button>
+        </div>
+        <div class="col-10">
+          <h3>Slide Toggle</h3>
+          <p class="slide-toggle-text">
+            Click the button to SlideToggle this paragraph.
+          </p>
+        </div>
+      </div>
+
+      <div class="row bg-secondary rounded align-items-center p-2 my-2">
+        <div class="col-2">
+          <button id="fade-in-btn" class="btn btn-success">Fade In</button>
+        </div>
+        <div class="col-10">
+          <h3>Fade In</h3>
+          <p class="fade-in-text">
+            Click the button to Fade In this paragraph.
+          </p>
+        </div>
+      </div>
+
+      <div class="row bg-secondary rounded align-items-center p-2 my-2">
+        <div class="col-2">
+          <button id="fade-out-btn" class="btn btn-success">Fade Out</button>
+        </div>
+        <div class="col-10">
+          <h3>Fade Out</h3>
+          <p class="fade-out-text">
+            Click the button to Fade Out this paragraph.
+          </p>
+        </div>
+      </div>
+
+      <div class="row bg-secondary rounded align-items-center p-2 my-2">
+        <div class="col-2">
+          <button id="before-btn" class="btn btn-success">.before</button>
+        </div>
+        <div class="col-10">
+          <h3>.before</h3>
+          <p class="before-text">
+            Click the button to add text before this paragraph.
+          </p>
+        </div>
+      </div>
+
+      <div class="row bg-secondary rounded align-items-center p-2 my-2">
+        <div class="col-2">
+          <button id="after-btn" class="btn btn-success">.after</button>
+        </div>
+        <div class="col-10">
+          <h3>.after</h3>
+          <p class="after-text">
+            Click the button to add text after this paragraph.
+          </p>
+        </div>
+      </div>
+
+      <div class="row bg-secondary rounded align-items-center p-2 my-2">
+        <div class="col-2">
+          <button id="append-btn" class="btn btn-success">append</button>
+        </div>
+        <div class="col-10">
+          <h3>append</h3>
+          <p class="append-text">
+            Click the button to append text to this paragraph.
+          </p>
+        </div>
+      </div>
+
+      <div class="row bg-secondary rounded align-items-center p-2 my-2">
+        <div class="col-2">
+          <button id="html-btn" class="btn btn-success">.html</button>
+        </div>
+        <div class="col-10">
+          <h3>.html</h3>
+          <p class="html-text">
+            Click the button to change then paragraph to a button.
+          </p>
+        </div>
+      </div>
+
+      <div class="row bg-secondary rounded align-items-center p-2 my-2">
+        <div class="col-2">
+          <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="sasb">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <div class="col-10">
+          <h3>.val</h3>
+          <p class="attr-text">
+            select from drop down to change this text
+            <span id="car-span">Car</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
